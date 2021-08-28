@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+:root{
+    --primaryColor:#F95C19;
+    --SecondaryColor:#d44e15;
+    --primaryText:#F95C19;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    background-color: #fff !important;
+    box-shadow: 1px 1px 2px #eee !important;
+    width: 100%;
+}
+
+
+.btn-search,.btn-search:hover
+    {
+    background-color: #ffeac0;
+    color:var(--primaryColor);
+    border: none;
+
+}
+
+.navbar{
+    background-color: transparent !important;
+    box-shadow: none !important;
+  
+}
+
+.btn-primary{
+
+    color: #FFFEFE;
+    background-color:var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.btn-primary:hover,.learn-btn:hover,.learn-btn-active:hover,.learn-btn-active:focus,.get-started:hover{
+
+    color: #FFFEFE;
+    background-color: #d44e15 !important;
+    border-color: #c74a14 !important;
+}
+
+
+.item{
+    color:rgba(0, 0, 0, 0.5)
+}
+.navbar{
+    position:fixed;
+    top:0;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #eee;
+    width:100%;
+}
+
+
+
+/* Start Hero section */
+
+.hero{
+   background-image: url(../img/hero-header-bg.png);
+   background-size: cover;
+   background-position: top center;
+   background-color: #fff2d7;
+   padding: 100px 0;
+}
+.title-hero{
+    font-size: 40px;
+}
+.service{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: bottom  center;
+    background-color: #fff2d7;
+   
+}
+.title-service{
+    color:var(--primaryText);
+    font-weight: bold ;
+
+}
+.card{
+
+    border: none;
+    border-radius: 12px;
+    padding: 35px;
+  
+}
+.card-text,span{
+    color:#747474;
+    font-weight: 100;
+    line-height: 1.7;
+}
+.list{
+
+    list-style: none;
+}
+.item-circle{
+
+    color:var(--primaryColor);
+    font-size: 8px;
+}
+
+.learn-btn{
+    border:1px solid var(--primaryColor);
+    color:var(--primaryText);
+    line-height: 0.5;
+    font-size: 17px;
+}
+
+.learn-btn-active:focus, .learn-btn:focus, button, .get-started:focus,.get-started:visited,.btn-search:focus
+    {
+    border-color: #fcae8c !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 152 0 / 26%) !important;
+}
+
+.learn-btn-active{
+    border:1px solid var(--primaryColor);
+    background-color:var(--primaryColor);
+    line-height: 0.5;
+    color:#fff;
+    font-size: 17px;
+    box-shadow: 0 12px 47px #f95c1970;
+}
+
+.learn-btn-active:hover{
+    animation: moveUp 3s ;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes moveUp {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+
+    
+    100%{
+        transform: translateY(20px);
+
+    }
+    
+}
+
+
+
+/* End Hero Section */
+
+
+/* start coount Section */
+.count{
+background-image: url(../img/bg.png);
+background-size: cover;
+background-position: center center;
+background-color: #fff2d7;
+}
+.number-text{
+
+    font-size: 36px;
+    font-weight: bold;
+    color:var(--primaryText)
+}
+.card-count{
+    background-color:transparent;
+    border: none;
+    border-radius: 0;
+
+}
+
+/* end coount Section */
+
+/* TESTIMONIAL section */
+
+.TESTIMONIAL{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: bottom  center;
+    background-color: #fff2d7;
+
+}
+
+.img-testemonial{
+    position: absolute;
+    top: 0;
+    left: -138px;
+
+}
+.carousel-indicators {
+  
+    bottom: -29px;
+
+    }
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: var(--primaryColor);
+}
+.carousel-indicators  .active{
+    width: 12px;
+    height: 12px;
+
+}
+.text-primary,.star-icon{
+    color: var(--primaryText) !important
+}
+.possition{
+    font-size: 12px;
+}
+
+/* End testemonial */
+
+/* Strat contact */
+.Contact{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: top  center;
+    background-color: #fff2d7;
+    padding: 80px 0;
+}
+
+::placeholder,textarea{
+        font-size: 14px !important;
+        color:#9e9e9e !important
+    }
+    .form-control{
+        background-color: transparent;
+
+    }
+    .form-control:focus {
+        color: #495057;
+        background-color: transparent;
+        border-color: #fcae8c !important;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(255 152 0 / 26%) !important;
+    }
+ 
+/* end contact */
+
+
+/*  Findout section */
+
+.fidOut{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: top  left;
+    background-color: #fff2d7;
+}
+
+.map-img{
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-map{
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+
+}
+.icon-contact{
+
+    color: var(--primaryColor);
+}
+.social-icon i{
+    font-size: 28px;
+    opacity: 0.1
+}
+
+.social-icon i:hover{
+ opacity: 1;
+    color: var(--primaryColor);
+}
+
+/* End findout */
+
+
+footer{
+    background-color: #2F2E41;
+}
+.copy-right{
+
+    font-size: 14px;
+
+}
+.copyr-right{
+    color:#747474;
+}
